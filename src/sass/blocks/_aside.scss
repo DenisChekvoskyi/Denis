@@ -1,0 +1,33 @@
+.aside {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 340px;
+  transform: rotate(-90deg);
+  top: 50vh;
+  left: -145px;
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__divider {
+    width: 70px;
+    height: 0px;
+    border: 1px solid #000000;
+  }
+  &__social {
+    width: 20px;
+    height: 20px;
+    img {
+      transition: 0.5s all;
+      width: 100%;
+    }
+    :hover {
+      transform: rotate(90deg) scale(1.5);
+    }
+  }
+}

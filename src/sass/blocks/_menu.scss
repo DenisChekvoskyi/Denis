@@ -1,0 +1,108 @@
+.hamburger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  top: 20px;
+  right: 30px;
+  height: 21px;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #151812;
+    &.middle {
+      width: 36px;
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  left: -100%;
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  transition: 0.5s all;
+  &.active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+  &__block {
+    position: absolute;
+    padding-top: 140px;
+    padding-left: 75px;
+    width: 345px;
+    height: 100vh;
+    background-color: $main-color;
+    z-index: 10;
+  }
+  &__link {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    list-style-type: none;
+    margin-bottom: 15px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 15px;
+      width: 15px;
+      top: 25%;
+      left: -35px;
+      border-radius: 100%;
+      border: 1px solid #000000;
+    }
+    &:hover {
+      &::before {
+        background-color: #ffffff;
+        border: none;
+      }
+    }
+  }
+  &__social {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    &__item {
+      width: 20px;
+      height: 20px;
+      transition: 0.5s all;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+}
