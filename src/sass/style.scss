@@ -16,6 +16,14 @@
   margin: 0 auto;
 }
 
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: $main-color;
+  margin-top: 25px;
+}
+
 @import "blocks/promo";
 @import "blocks/aside";
 @import "blocks/menu";
+@import "blocks/about";
