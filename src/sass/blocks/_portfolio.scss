@@ -1,0 +1,15 @@
+.portfolio {
+  padding-top: 120px;
+  &__wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 565px);
+    grid-auto-rows: 280px;
+    gap: 5px;
+    a {
+      :hover {
+        filter: opacity(90%);
+      }
+    }
+  }
+}

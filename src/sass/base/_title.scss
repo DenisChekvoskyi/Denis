@@ -24,4 +24,16 @@
     font-size: 48px;
     line-height: 60px;
   }
+  &_section {
+    position: relative;
+    text-align: center;
+    &::before {
+      @include circle;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &_subtitle {
+    text-align: center;
+  }
 }
