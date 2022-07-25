@@ -3,9 +3,9 @@ $(document).ready(function () {
     adaptiveHeight: true,
     speed: 1500,
     prevArrow:
-      '<button type="button" class="slick-prev"><img src="../icons/left.svg"></button>',
+      '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><img src="../icons/right.svg"></button>',
+      '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
   });
 
   $("ul.catalog__tabs").on(
